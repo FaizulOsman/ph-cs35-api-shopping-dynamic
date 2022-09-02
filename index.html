@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API - Shopping Dynamic Website</title>
+    <!-- Link DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- Link Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Header Search Input Section -->
+    <header>
+        <div class="form-control w-1/3 mx-auto max-w-xs">
+            <label class="label">
+                <span class="label-text">Search Your Products</span>
+                <kbd onclick="enterButton()" class="kbd kbd-sm">Enter</kbd>
+            </label>
+            <input id="search-input-field" type="text" placeholder="Type here"
+                class="input input-bordered w-full max-w-xs" />
+            <!-- Progress Bar Area -->
+            <div id="main-section" class="mx-auto mt-5"></div>
+        </div>
+    </header>
+
+    <!-- Products Section -->
+    <main class="mt-20">
+        <section class="w-11/12 mx-auto flex">
+            <aside class="w-1/6 mr-8">
+                <ul id="menu-items-section" class="menu w-56 bg-primary-focus text-white p-2 rounded-box">
+
+                </ul>
+            </aside>
+            <div id="products-section" class="w-5/6 px-4 rounded-sm grid grid-cols-3 gap-4">
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Product Details Modal -->
+    <div id="product-details-modal"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
